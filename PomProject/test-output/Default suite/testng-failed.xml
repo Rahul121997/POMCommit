@@ -3,16 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="LumaTestCases.CheckOutAllGendersShop">
+      <class name="LumaTestCases.ProfileTest">
         <methods>
+          <include name="ValidateChangePassoword"/>
           <include name="TearDown"/>
           <include name="Start"/>
-          <include name="CheckOutEquipmentsItems"/>
-          <include name="CheckOutWomenItems"/>
-          <include name="CheckOutMensItems"/>
-          <include name="CheckoutMensItemsBottom"/>
         </methods>
-      </class> <!-- LumaTestCases.CheckOutAllGendersShop -->
+      </class> <!-- LumaTestCases.ProfileTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

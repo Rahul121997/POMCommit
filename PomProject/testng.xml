@@ -8,6 +8,7 @@
       <class name="LumaTestCases.AboutUsTestCase"/>
       <class name="LumaTestCases.CheckOutItems"/>
       <class name="LumaTestCases.CreateLumaAccounTest"/>
+      <class name="RoughPkg.Tests"/>
       <class name="LumaTestCases.CheckOutAllGendersShop"/>
       <class name="LumaTestCases.BlogTestCase"/>
     </classes>

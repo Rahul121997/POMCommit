@@ -33,7 +33,8 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.titusfortner.logging.SeleniumLogger;
-
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import LumaPages.LoginPage;
 import LumaPages.ShopNowPage;
 
@@ -46,11 +47,11 @@ public class BaseClass {
 	public static XSSFWorkbook book;
 	public static FileInputStream stream;
 	public static Actions act;
-	public static Logger log  = LogManager.getLogger(BaseClass.class);;
+	public static Logger log = LogManager.getLogger();
 
 
 
-	
+
 	public static String scrdate;
 	public static Properties p=new Properties();  ;
 
@@ -58,16 +59,20 @@ public class BaseClass {
 
 	public static void MainRun()
 	{
-		
-		log.info("test");
+		log.info("Opening Chrome Browser");
 		driver = new ChromeDriver(); 
+		
+		log.info("redirecting to luma website");
 		driver.get("https://luma.enablementadobe.com/");
+		
+		log.info("maximize  Chrome Browser window");
 		driver.manage().window().maximize();
+
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));	
 		lp=new LoginPage();
+		
+		log.info("click on  alert pop notification");
 		lp.ClickOnAlertPopUp();
-
-
 
 	}
 	public static void Rb(String path) throws AWTException, InterruptedException
@@ -137,8 +142,12 @@ public class BaseClass {
 
 	public void CloseDriver()
 	{
-		driver.close();
+		log.info("closing driver instance");
+		if (driver != null) 
+		{
+			driver.quit();	
+		}
+
+
 	}
-
-
 }

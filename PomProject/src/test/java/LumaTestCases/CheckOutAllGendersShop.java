@@ -33,13 +33,23 @@ public class CheckOutAllGendersShop extends BaseClass{
 		lg.LoginTestR();
 		sp =new ShopNowPage();
 		spg =new ShopByGender();
+		log.info("click on women shopping section");
 		spg.ClcikWomenShoppingBtn();
+		log.info("click on women main shopping section");
 		spg.ClickMainWomenShpBtn();
+		log.info("click on women product1");
+
 		spg.ClcikWomenPrd1();
-		//spg.ClcikPrdctSize();
-		sp.ClickOnAddtocart();
-		sp.ClickOnAddtocart();
+		log.info("click on product size");
+
+		spg.ClcikPrdctSize();
+		log.info("click on add to cart button");
+		sp.ClickOnCheckOutBtnLast();
+		
+		log.info("Enter Shipping details");
 		cot.EnterCheckOutInfo();
+		
+		log.info("click on back to home button");
 		spg.BackToHomes();
 
 	}
@@ -47,36 +57,77 @@ public class CheckOutAllGendersShop extends BaseClass{
 	@Test(priority=2)
 	public void CheckOutMensItems()
 	{
+		log.info("click on men shopping section");
+
 		spg.ClickmenShoppingbtn();
+		log.info("click on men main shopping section");
+
 		spg.ClickOnMainmenShp();
+		log.info("click on men tops section");
+
 		spg.ClickOnTopsBtn();
+		log.info("click on men tops produt1 ");
+
 		spg.ClcikMenPrd1();
+		log.info("click on add to cart button");
+
+		
 		sp.ClickOnAddtocart();
+		log.info("Enter Shipping details");
+
+
 		cot.EnterCheckOutInfo();
+		log.info("click on back to home button");
 		spg.BackToHomes();
 	}
 
 	@Test(priority=3)
 	public void CheckoutMensItemsBottom()
 	{
+		log.info("click on men shopping section");
 		spg.ClickmenShoppingbtn();
+		log.info("click on men main shopping section");
+
 		spg.ClickOnMainmenShp();
+		log.info("click on men bottoms section");
+
+		
 		spg.ClickonBtmsBtn();
+		log.info("click on men bottom produt1 ");
+
+		
 		spg.ClickOnBottomsPrd1();
+		log.info("click on add to cart button");
+
 		sp.ClickOnAddtocart();
+		log.info("Enter Shipping details");
+
 		cot.EnterCheckOutInfo();
+		log.info("click on back to home button");
+
+		
 		spg.BackToHomes();
 	}
 
 	@Test(priority=4)
 	public void CheckOutEquipmentsItems()
 	{
-		System.out.println("test 0333333333");
+		log.info("click on EquipMent shopping section");
+
 		spg.ClickEquipMentBtn();
+		log.info("click on EquipMent main shopping section");
+
 		spg.ClickEquipmentMainBtn();
+		log.info("click on EquipMent produt1 ");
 		spg.ClickduffleBag();
+		log.info("click on add to cart button");
+
 		sp.ClickOnAddtocart();
+		log.info("Enter Shipping details");
+
 		cot.EnterCheckOutInfo();
+		log.info("click on back to home button");
+
 		spg.BackToHomes();
 	}
 

@@ -31,35 +31,20 @@ import Pages.BaseClass;
 public class Tests extends BaseClass {
 
 
-	@BeforeClass
-	public void Start()
-	{
-		MainRun();
-	}
-
-
 	
-	public void SicoLogin() throws InterruptedException
-	{
-		System.out.println(driver.getWindowHandle());
-		String parent=driver.getWindowHandle();
-		lp.ClickOnLoginBtn();
-		Set<String>window=	driver.getWindowHandles();
-		for(String windows:window)
-		{
-			System.out.println(driver.getWindowHandle());
-			if(!windows.equals(parent))
-			{
-				String Acuatl=driver.switchTo().window(windows).getCurrentUrl();
-				Assert.assertEquals(Acuatl,"https://www.facebook.com/");
-				driver.switchTo().window(windows).close();
-			}
-		}
-
+	 
+	    public void testHelloWorld() {
+	        log.debug("Sample DEBUG message");
+	        log.error("Sample ERROR message");
+	        log.info("Sample INFO message");
+	        log.warn("Sample WARN message");
+	    }
 	}
+	
+	
 
 
-}
+
 
 
 

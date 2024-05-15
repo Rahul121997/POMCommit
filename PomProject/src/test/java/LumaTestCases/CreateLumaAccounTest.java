@@ -35,29 +35,65 @@ public class CreateLumaAccounTest extends BaseClass {
 		p=new Properties();
 		reader=new FileReader(AboutUsTestCase.path);
 		p.load(reader);
-		pg=new LumaCreateAccountPages();	
+		pg=new LumaCreateAccountPages();
+		log.info("click on login button");
 		pg.ClickOnLoginBtn();
+		
+		log.info("click on create account button");
 		pg.ClickonCreateAccount();
+		
+		log.info("enter frist name :"+p.getProperty("fname"));
 		pg.EnterFIRSTNAME(p.getProperty("fname"));
+		
+		log.info("enter last name :"+p.getProperty("lname"));
 		pg.EnterLASTNAME(p.getProperty("lname"));
+		
+		
+		log.info("enter email :"+p.getProperty("email"));
 		pg.EnterEMAIL(p.getProperty("email"));
+		
+		
+		log.info("enter passowrd :"+p.getProperty("pwd"));
 		pg.EnterPASSWORD(p.getProperty("pwd"));
+		
+		log.info("enter Confrim passowrd :"+p.getProperty("cpwd"));
 		pg.EnterCONFIRMPASSWORD(p.getProperty("cpwd"));
+		
+		log.info("click on Sign Up Button");
 		pg.ClickSignupBtn();
+		
+		log.info("Validate create account ");
 		pg.ValidateCreateAccount(p.getProperty("createaccountvalidationtext"));		
 	}	
 	
 	@Test(priority=2)
 	public void ValidateCreateAccountWithEmail()
 	{
+		log.info("click on login button");
 		pg.ClickOnLoginBtn();
+		
+		log.info("click on create account button");
 		pg.ClickonCreateAccount();
+		
+		log.info("enter frist name :"+p.getProperty("fname"));
 		pg.EnterFIRSTNAME(p.getProperty("fname"));
+		
+		log.info("enter last name :"+p.getProperty("lname"));
 		pg.EnterLASTNAME(p.getProperty("lname"));
+		
+		log.info("enter email :"+p.getProperty("email"));
 		pg.EnterUsedSameEMAIL(p.getProperty("usedemail"));
+		
+		log.info("enter passowrd :"+p.getProperty("pwd"));
 		pg.EnterPASSWORD(p.getProperty("pwd"));
+		
+		log.info("enter Confrim passowrd :"+p.getProperty("cpwd"));
 		pg.EnterCONFIRMPASSWORD(p.getProperty("cpwd"));
+		
+		log.info("click on Sign Up Button");
 		pg.ClickSignupBtn();
+		
+		log.info("Validate ExistingUser");
 		pg.ValidateExistingUser(p.getProperty("alertmsg"));
 	}
 

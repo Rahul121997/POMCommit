@@ -36,11 +36,11 @@ public class BlogTestCase extends BaseClass {
 		reader=new FileReader(AboutUsTestCase.path);
 		p.load(reader);
 		bl=new Blogs();
-		log.debug("Clicking on blog button");
+		log.info("Clicking on blog button");
 		bl.ClickonBlogdBtn();
-		log.debug("Clicking on blog1 button");
+		log.info("Clicking on blog1 section");
 		bl.ClickOnBlog1();
-		log.debug("validating on blog1 debug");
+		log.info("validating on blog1 info");
 		bl.ValidateBlog1(p.getProperty("blog1msg"));
 		
 	}
@@ -48,13 +48,13 @@ public class BlogTestCase extends BaseClass {
 	@Test(priority=2)
 	public void ValidateBlog2()
 	{
-		log.debug("Clicking on blog button");
+		log.info("Clicking on blog button");
 
 		bl.ClickonBlogdBtn();
-		log.debug("Clicking on blog2 button");
+		log.info("Clicking on blog2 section");
 
 		bl.ClickOnBlog2();
-		log.debug("validating on blog2 debug");
+		log.info("validating on blog2 info");
 
 		bl.ValidateBlog2(p.getProperty("blog2msg"));
 		
@@ -64,13 +64,13 @@ public class BlogTestCase extends BaseClass {
 	@Test(priority=3)
 	public void ValidateBlog3()
 	{
-		log.debug("Clicking on blog button");
+		log.info("Clicking on blog button");
 
 		bl.ClickonBlogdBtn();
-		log.debug("Clicking on blog3 button");
+		log.info("Clicking on blog3 section");
 
 		bl.ClickOnBlog3();
-		log.debug("validating on blog3 debug");
+		log.info("validating on blog3 info");
 
 		bl.ValidateBlog3(p.getProperty("blog3msg"));
 		
@@ -79,7 +79,6 @@ public class BlogTestCase extends BaseClass {
 	@AfterClass
 	public void TearDown()
 	{
-		log.debug("closing driver instance");
 		CloseDriver();
 	}
 
