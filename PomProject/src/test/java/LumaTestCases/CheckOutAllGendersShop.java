@@ -1,20 +1,23 @@
 package LumaTestCases;
 
+import java.io.IOException;
+
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import LumaPages.ShopByGender;
 import LumaPages.ShopNowPage;
 import Pages.BaseClass;
-
+@Listeners(Listensers.MyListener.class)
 public class CheckOutAllGendersShop extends BaseClass{
 
 	public static ShopByGender spg;
 	public static LumaLoginTest lg;
 	public static ShopNowPage sp;
-	
+	CheckOutItems cot;
 
 	@BeforeClass(alwaysRun=true)
 	public void Start()
@@ -23,8 +26,9 @@ public class CheckOutAllGendersShop extends BaseClass{
 	}
 
 	@Test(priority=1)
-	public void CheckOutWomenItems()
-	{
+	public void CheckOutWomenItems() throws IOException
+	{  
+		cot=new CheckOutItems();
 		lg=new LumaLoginTest();
 		lg.LoginTestR();
 		sp =new ShopNowPage();
@@ -32,13 +36,14 @@ public class CheckOutAllGendersShop extends BaseClass{
 		spg.ClcikWomenShoppingBtn();
 		spg.ClickMainWomenShpBtn();
 		spg.ClcikWomenPrd1();
-		spg.ClcikPrdctSize();
+		//spg.ClcikPrdctSize();
 		sp.ClickOnAddtocart();
-		EnterCheckOutDetails();
+		sp.ClickOnAddtocart();
+		cot.EnterCheckOutInfo();
 		spg.BackToHomes();
- 
+
 	}
-	
+
 	@Test(priority=2)
 	public void CheckOutMensItems()
 	{
@@ -47,10 +52,10 @@ public class CheckOutAllGendersShop extends BaseClass{
 		spg.ClickOnTopsBtn();
 		spg.ClcikMenPrd1();
 		sp.ClickOnAddtocart();
-		EnterCheckOutDetails();
+		cot.EnterCheckOutInfo();
 		spg.BackToHomes();
 	}
-	
+
 	@Test(priority=3)
 	public void CheckoutMensItemsBottom()
 	{
@@ -59,10 +64,10 @@ public class CheckOutAllGendersShop extends BaseClass{
 		spg.ClickonBtmsBtn();
 		spg.ClickOnBottomsPrd1();
 		sp.ClickOnAddtocart();
-		EnterCheckOutDetails();
+		cot.EnterCheckOutInfo();
 		spg.BackToHomes();
 	}
-	
+
 	@Test(priority=4)
 	public void CheckOutEquipmentsItems()
 	{
@@ -71,12 +76,12 @@ public class CheckOutAllGendersShop extends BaseClass{
 		spg.ClickEquipmentMainBtn();
 		spg.ClickduffleBag();
 		sp.ClickOnAddtocart();
-		EnterCheckOutDetails();
+		cot.EnterCheckOutInfo();
 		spg.BackToHomes();
 	}
-	
-	
-	
+
+
+
 	@AfterClass
 	public void TearDown()
 	{

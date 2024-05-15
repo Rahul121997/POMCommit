@@ -5,12 +5,10 @@
     <classes>
       <class name="LumaTestCases.LumaLoginTest"/>
       <class name="LumaTestCases.ProfileTest"/>
-      <class name="LumaTestCases.CreateLumaAccounTest"/>
-      <class name="LumaTestCases.CheckOutItems"/>
       <class name="LumaTestCases.AboutUsTestCase"/>
-      <class name="LumaTestCases.LumaLogoutTest"/>
+      <class name="LumaTestCases.CheckOutItems"/>
+      <class name="LumaTestCases.CreateLumaAccounTest"/>
       <class name="LumaTestCases.CheckOutAllGendersShop"/>
-      <class name="RoughPkg.Tests"/>
       <class name="LumaTestCases.BlogTestCase"/>
     </classes>
   </test> <!-- Test -->

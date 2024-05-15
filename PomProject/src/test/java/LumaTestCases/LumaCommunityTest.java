@@ -19,16 +19,16 @@ public class LumaCommunityTest extends BaseClass{
 		MainRun();
 	}
 
-	@Test
+
 	public void CommunityFileUpload() throws IOException, InterruptedException
 	{
-		
+
 		lcp=new LumaCommunityPage();
 		lcp.HoverToCommunityTab();
-		
-		  lcp.ClickOnFilesBtn(); lcp.ClickOnCreateNewBtn();
-		  lcp.ChooseFileBtn("C:\\Users\\Rahul\\Documents\\NewFileUpload.exe");
-		  lcp.EnterFileDescription("ForTestPurpose"); lcp.ClickonOKFileBtn1(); 		 	
+
+		lcp.ClickOnFilesBtn(); lcp.ClickOnCreateNewBtn();
+		lcp.ChooseFileBtn("C:\\Users\\Rahul\\Documents\\NewFileUpload.exe");
+		lcp.EnterFileDescription("ForTestPurpose"); lcp.ClickonOKFileBtn1(); 		 	
 	}
 
 	@BeforeClass

@@ -1,5 +1,10 @@
 package LumaTestCases;
 
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.Properties;
+
+import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Listeners;
@@ -14,7 +19,9 @@ import Pages.BaseClass;
 public class AboutUsTestCase extends BaseClass {
 
 	public static AboutUsPage aup;
-
+	public static FileReader reader;
+	public static Properties p;
+	public static String path="./src/test/resources/Properties/testdata.properties";
 
 	@BeforeClass
 	public void Start()
@@ -23,25 +30,28 @@ public class AboutUsTestCase extends BaseClass {
 	}
 
 	@Test
-	public void ValidateAbouts()
+	public void ValidateAbouts() throws IOException
 	{
+		p=new Properties();
+		reader=new FileReader(path);
+		p.load(reader);
 		aup=new AboutUsPage();
 		aup.ClickOnAboutUs();
-		aup.ValidatedAboutUsTexts("Before creating Luma, pro trainer Erin Renny helped world-class athletes reach peak fitness");
-		ReportsPass();
+		System.out.println(p.getProperty("AboutValidation"));
+		aup.ValidatedAboutUsTexts(p.getProperty("AboutValidation"));
+		
 	}
 	
 	@Test
 	public void ValidateContactLuma()
 	{
 		aup.ClickOnContacctLumaBtn();
-		aup.EnterFullNameTxtBoxs("Rahul Ramgairi");
-		aup.EnterEmailBoxs("ramagirirahul@gmail.com");
-		aup.EnterPhoneNumverBoxs("9182890771");
-		aup.EntercontactingTxtBoxs("This is for testing purpose");
+		aup.EnterFullNameTxtBoxs(p.getProperty("username"));
+		aup.EnterEmailBoxs(p.getProperty("eamil"));
+		aup.EnterPhoneNumverBoxs(p.getProperty("phonenumber"));
+		aup.EntercontactingTxtBoxs(p.getProperty("testmsg"));
 		aup.ClickSubmitBtnLumaConatacts();
-		aup.validateLumaServiceRequest("enter your full name");
-		ReportsPass();
+		aup.validateLumaServiceRequest(p.getProperty("testexplination"));
 	}
 	
 	@Test
@@ -49,17 +59,14 @@ public class AboutUsTestCase extends BaseClass {
 	{
 		aup.ClickOnAboutUs();
 		aup.ClickOnCustomerServiceBtn();
-		aup.ValidateCustomerServicevalidationtext("Shipping and Delivery");
-		ReportsPass();
+		aup.ValidateCustomerServicevalidationtext(p.getProperty("coustemrvalidation"));
 	}
 	@Test
 	public void ValidatePrivacyPolicy()
 	{
 		aup.ClickOnAboutUs();
 		aup.ClickOnLumaPrivacyPolicyBtn();
-		aup.ValidateLumaPrivacyPolicyvalidationtext("Luma Security");
-		ReportsPass();
-		
+		aup.ValidateLumaPrivacyPolicyvalidationtext(p.getProperty("lumaprivacy"));
 	}
 	
 	@AfterClass

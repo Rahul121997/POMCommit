@@ -3,18 +3,23 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="LumaTestCases.LumaLogoutTest">
+      <class name="LumaTestCases.LumaLoginTest">
         <methods>
-          <include name="Setup"/>
-          <include name="ValidateLumaLogout"/>
+          <include name="Login_With_Twitter"/>
           <include name="TearDown"/>
+          <include name="Setup"/>
         </methods>
-      </class> <!-- LumaTestCases.LumaLogoutTest -->
-      <class name="RoughPkg.Tests">
+      </class> <!-- LumaTestCases.LumaLoginTest -->
+      <class name="LumaTestCases.CheckOutAllGendersShop">
         <methods>
-          <include name="DataDriven"/>
+          <include name="TearDown"/>
+          <include name="Start"/>
+          <include name="CheckOutEquipmentsItems"/>
+          <include name="CheckOutWomenItems"/>
+          <include name="CheckOutMensItems"/>
+          <include name="CheckoutMensItemsBottom"/>
         </methods>
-      </class> <!-- RoughPkg.Tests -->
+      </class> <!-- LumaTestCases.CheckOutAllGendersShop -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

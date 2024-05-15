@@ -17,7 +17,7 @@ import Pages.BaseClass;
 public class LumaCreateAccountPages extends BaseClass{
 
 
-	@FindBy(xpath="//*[@id=\"top\"]/div[1]/div/ul[2]/li[2]/a")
+	@FindBy(xpath="//ul[@class='nav navbar-nav navbar-right']/li/a[contains(@href,'community/signin.html')]")
 	WebElement LoginBtn;
 
 	@FindBy(xpath="//a[text()='new account']")
@@ -35,7 +35,6 @@ public class LumaCreateAccountPages extends BaseClass{
 
 	@FindBy(xpath="//input[@name='password']")
 	WebElement PASSWORD;
-
 
 
 	@FindBy(xpath="//input[@placeholder='Confirm Password']")
@@ -59,7 +58,8 @@ public class LumaCreateAccountPages extends BaseClass{
 	
 	public void ClickOnLoginBtn()
 	{
-		LoginBtn.click();
+		WebElement LoginBtn1 = wait.until(ExpectedConditions.visibilityOf(LoginBtn));
+		LoginBtn1.click();
 	}
 
 	
@@ -99,10 +99,7 @@ public class LumaCreateAccountPages extends BaseClass{
 	{
 		EMAIL.sendKeys(email);
 	}
-	
-	
 
-	
 	public void EnterPASSWORD(String Password)
 	{
         

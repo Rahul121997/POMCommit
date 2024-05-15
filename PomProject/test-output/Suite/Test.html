@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>21/2/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>19/5/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue May 07 22:18:33 IST 2024</td>
+<td>Started on:</td><td>Sun May 12 17:28:21 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>516 seconds (516593 ms)</td>
+<tr><td>Total time:</td><td>360 seconds (360960 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,61 +76,21 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='RoughPkg.Tests.DataDriven()'><b>DataDriven</b><br>Test class: RoughPkg.Tests</td>
-<td><div><pre>java.io.FileNotFoundException: C:\Users\Rahul\eclipse-workspace\PomProject\src\test\resources\TestData\TestData.xlsx (The system cannot find the file specified)
-	at java.base/java.io.FileInputStream.open0(Native Method)
-	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
-	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:157)
-	at RoughPkg.Tests.DataDriven(Tests.java:41)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace715950807", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace715950807'><pre>java.io.FileNotFoundException: C:\Users\Rahul\eclipse-workspace\PomProject\src\test\resources\TestData\TestData.xlsx (The system cannot find the file specified)
-	at java.base/java.io.FileInputStream.open0(Native Method)
-	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
-	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:157)
-	at RoughPkg.Tests.DataDriven(Tests.java:41)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:819)
-	at org.testng.TestRunner.run(TestRunner.java:619)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-	at org.testng.TestNG.runSuites(TestNG.java:1134)
-	at org.testng.TestNG.run(TestNG.java:1101)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>RoughPkg.Tests@43f02ef2</td></tr>
-<tr>
-<td title='LumaTestCases.LumaLogoutTest.ValidateLumaLogout()'><b>ValidateLumaLogout</b><br>Test class: LumaTestCases.LumaLogoutTest</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;top&quot;]/div[1]/div/ul[2]/li[2]/a&quot;}
-  (Session info: chrome=124.0.6367.119)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+<td title='LumaTestCases.CheckOutAllGendersShop.CheckOutEquipmentsItems()'><b>CheckOutEquipmentsItems</b><br>Test class: LumaTestCases.CheckOutAllGendersShop<br/>
+<a href="#Output-307230285" onClick='toggleBox("Output-307230285", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-307230285" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-307230285">
+Click to see ScreenShot<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.NoSuchSessionException: invalid session id
 Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [294096f8ef465b09d670a1257b0b2d7a, findElement {using=xpath, value=//*[@id=&quot;top&quot;]/div[1]/div/ul[2]/li[2]/a}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.119, chrome: {chromedriverVersion: 124.0.6367.91 (51df0e5e17a8..., userDataDir: C:\Users\Rahul\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60157}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60157/devtoo..., se:cdpVersion: 124.0.6367.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 294096f8ef465b09d670a1257b0b2d7a
+Command: [a098c1cfecc78b2ccf92dfb455be4616, findElement {value=//a[text()=&apos;Checkout&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.201, chrome: {chromedriverVersion: 124.0.6367.201 (46cf136d27d..., userDataDir: C:\Users\Rahul\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64121}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64121/devtoo..., se:cdpVersion: 124.0.6367.201, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a098c1cfecc78b2ccf92dfb455be4616
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -144,20 +104,23 @@ Session ID: 294096f8ef465b09d670a1257b0b2d7a
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
-	at LumaPages.LoginPage.ClickOnLoginBtn(LoginPage.java:64)
-	at LumaTestCases.LumaLogoutTest.ValidateLumaLogout(LumaLogoutTest.java:36)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	at LumaPages.ShopNowPage.ClickOnCheckOutBtnLast(ShopNowPage.java:137)
+	at LumaTestCases.CheckOutItems.EnterCheckOutInfo(CheckOutItems.java:46)
+	at LumaTestCases.CheckOutAllGendersShop.CheckOutEquipmentsItems(CheckOutAllGendersShop.java:79)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1856128687", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1856128687'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;top&quot;]/div[1]/div/ul[2]/li[2]/a&quot;}
-  (Session info: chrome=124.0.6367.119)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace307230285", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace307230285'><pre>org.openqa.selenium.NoSuchSessionException: invalid session id
 Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [294096f8ef465b09d670a1257b0b2d7a, findElement {using=xpath, value=//*[@id=&quot;top&quot;]/div[1]/div/ul[2]/li[2]/a}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.119, chrome: {chromedriverVersion: 124.0.6367.91 (51df0e5e17a8..., userDataDir: C:\Users\Rahul\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60157}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60157/devtoo..., se:cdpVersion: 124.0.6367.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 294096f8ef465b09d670a1257b0b2d7a
+Command: [a098c1cfecc78b2ccf92dfb455be4616, findElement {value=//a[text()=&apos;Checkout&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.201, chrome: {chromedriverVersion: 124.0.6367.201 (46cf136d27d..., userDataDir: C:\Users\Rahul\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64121}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64121/devtoo..., se:cdpVersion: 124.0.6367.201, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a098c1cfecc78b2ccf92dfb455be4616
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -176,9 +139,14 @@ Session ID: 294096f8ef465b09d670a1257b0b2d7a
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
-	at LumaPages.LoginPage.ClickOnLoginBtn(LoginPage.java:64)
-	at LumaTestCases.LumaLogoutTest.ValidateLumaLogout(LumaLogoutTest.java:36)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	at LumaPages.ShopNowPage.ClickOnCheckOutBtnLast(ShopNowPage.java:137)
+	at LumaTestCases.CheckOutItems.EnterCheckOutInfo(CheckOutItems.java:46)
+	at LumaTestCases.CheckOutAllGendersShop.CheckOutEquipmentsItems(CheckOutAllGendersShop.java:79)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -208,8 +176,362 @@ Session ID: 294096f8ef465b09d670a1257b0b2d7a
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>0</td>
-<td>LumaTestCases.LumaLogoutTest@740fb309</td></tr>
+<td>15</td>
+<td>LumaTestCases.CheckOutAllGendersShop@3829ac1</td></tr>
+<tr>
+<td title='LumaTestCases.CheckOutAllGendersShop.CheckOutMensItems()'><b>CheckOutMensItems</b><br>Test class: LumaTestCases.CheckOutAllGendersShop<br/>
+<a href="#Output-1459113115" onClick='toggleBox("Output-1459113115", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1459113115" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1459113115">
+Click to see ScreenShot<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a098c1cfecc78b2ccf92dfb455be4616, findElement {value=//a[text()=&apos;Checkout&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.201, chrome: {chromedriverVersion: 124.0.6367.201 (46cf136d27d..., userDataDir: C:\Users\Rahul\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64121}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64121/devtoo..., se:cdpVersion: 124.0.6367.201, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a098c1cfecc78b2ccf92dfb455be4616
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	at LumaPages.ShopNowPage.ClickOnCheckOutBtnLast(ShopNowPage.java:137)
+	at LumaTestCases.CheckOutItems.EnterCheckOutInfo(CheckOutItems.java:46)
+	at LumaTestCases.CheckOutAllGendersShop.CheckOutMensItems(CheckOutAllGendersShop.java:55)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1459113115", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1459113115'><pre>org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a098c1cfecc78b2ccf92dfb455be4616, findElement {value=//a[text()=&apos;Checkout&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.201, chrome: {chromedriverVersion: 124.0.6367.201 (46cf136d27d..., userDataDir: C:\Users\Rahul\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64121}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64121/devtoo..., se:cdpVersion: 124.0.6367.201, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a098c1cfecc78b2ccf92dfb455be4616
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	at LumaPages.ShopNowPage.ClickOnCheckOutBtnLast(ShopNowPage.java:137)
+	at LumaTestCases.CheckOutItems.EnterCheckOutInfo(CheckOutItems.java:46)
+	at LumaTestCases.CheckOutAllGendersShop.CheckOutMensItems(CheckOutAllGendersShop.java:55)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>19</td>
+<td>LumaTestCases.CheckOutAllGendersShop@3829ac1</td></tr>
+<tr>
+<td title='LumaTestCases.LumaLoginTest.Login_With_Twitter()'><b>Login_With_Twitter</b><br>Test class: LumaTestCases.LumaLoginTest<br/>
+<a href="#Output-920926249" onClick='toggleBox("Output-920926249", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-920926249" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-920926249">
+Click to see ScreenShot<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: expected [https://twitter.com/login] but found [https://luma.enablementadobe.com/var/community/cloudservices/twitterconnect.login.html/j_security_check?configid=a9dea3b044e912071cbffd4839016d2e]
+	at LumaPages.LoginPage.Clikc_Sign_inWithTwitter(LoginPage.java:160)
+	at LumaTestCases.LumaLoginTest.Login_With_Twitter(LumaLoginTest.java:88)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace920926249", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace920926249'><pre>java.lang.AssertionError: expected [https://twitter.com/login] but found [https://luma.enablementadobe.com/var/community/cloudservices/twitterconnect.login.html/j_security_check?configid=a9dea3b044e912071cbffd4839016d2e]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at LumaPages.LoginPage.Clikc_Sign_inWithTwitter(LoginPage.java:160)
+	at LumaTestCases.LumaLoginTest.Login_With_Twitter(LumaLoginTest.java:88)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>3</td>
+<td>LumaTestCases.LumaLoginTest@5ce33a58</td></tr>
+<tr>
+<td title='LumaTestCases.CheckOutAllGendersShop.CheckOutWomenItems()'><b>CheckOutWomenItems</b><br>Test class: LumaTestCases.CheckOutAllGendersShop<br/>
+<a href="#Output-770164810" onClick='toggleBox("Output-770164810", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-770164810" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-770164810">
+Click to see ScreenShot<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a098c1cfecc78b2ccf92dfb455be4616, findElement {value=//a[text()=&apos;Checkout&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.201, chrome: {chromedriverVersion: 124.0.6367.201 (46cf136d27d..., userDataDir: C:\Users\Rahul\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64121}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64121/devtoo..., se:cdpVersion: 124.0.6367.201, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a098c1cfecc78b2ccf92dfb455be4616
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	at LumaPages.ShopNowPage.ClickOnCheckOutBtnLast(ShopNowPage.java:137)
+	at LumaTestCases.CheckOutItems.EnterCheckOutInfo(CheckOutItems.java:46)
+	at LumaTestCases.CheckOutAllGendersShop.CheckOutWomenItems(CheckOutAllGendersShop.java:42)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace770164810", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace770164810'><pre>org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a098c1cfecc78b2ccf92dfb455be4616, findElement {value=//a[text()=&apos;Checkout&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.201, chrome: {chromedriverVersion: 124.0.6367.201 (46cf136d27d..., userDataDir: C:\Users\Rahul\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64121}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64121/devtoo..., se:cdpVersion: 124.0.6367.201, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a098c1cfecc78b2ccf92dfb455be4616
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	at LumaPages.ShopNowPage.ClickOnCheckOutBtnLast(ShopNowPage.java:137)
+	at LumaTestCases.CheckOutItems.EnterCheckOutInfo(CheckOutItems.java:46)
+	at LumaTestCases.CheckOutAllGendersShop.CheckOutWomenItems(CheckOutAllGendersShop.java:42)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>29</td>
+<td>LumaTestCases.CheckOutAllGendersShop@3829ac1</td></tr>
+<tr>
+<td title='LumaTestCases.CheckOutAllGendersShop.CheckoutMensItemsBottom()'><b>CheckoutMensItemsBottom</b><br>Test class: LumaTestCases.CheckOutAllGendersShop<br/>
+<a href="#Output-1098139353" onClick='toggleBox("Output-1098139353", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1098139353" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1098139353">
+Click to see ScreenShot<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (-22, 8)
+  (Session info: chrome=124.0.6367.201)
+Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9cb176cfa9254288683f391734b2e217, clickElement {id=f.F70740FB1A5DF9739C0A94EB9C0CDF81.d.D5F4D6EE3189A6AB6C263A2DCDF01F55.e.649}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.201, chrome: {chromedriverVersion: 124.0.6367.201 (46cf136d27d..., userDataDir: C:\Users\Rahul\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64261}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64261/devtoo..., se:cdpVersion: 124.0.6367.201, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (9cb176cfa9254288683f391734b2e217)] -&gt; link text: Men]
+Session ID: 9cb176cfa9254288683f391734b2e217
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
+	at LumaPages.ShopByGender.ClickmenShoppingbtn(ShopByGender.java:115)
+	at LumaTestCases.CheckOutAllGendersShop.CheckoutMensItemsBottom(CheckOutAllGendersShop.java:62)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1098139353", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1098139353'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (-22, 8)
+  (Session info: chrome=124.0.6367.201)
+Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9cb176cfa9254288683f391734b2e217, clickElement {id=f.F70740FB1A5DF9739C0A94EB9C0CDF81.d.D5F4D6EE3189A6AB6C263A2DCDF01F55.e.649}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.201, chrome: {chromedriverVersion: 124.0.6367.201 (46cf136d27d..., userDataDir: C:\Users\Rahul\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64261}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64261/devtoo..., se:cdpVersion: 124.0.6367.201, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (9cb176cfa9254288683f391734b2e217)] -&gt; link text: Men]
+Session ID: 9cb176cfa9254288683f391734b2e217
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at jdk.internal.reflect.GeneratedMethodAccessor52.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
+	at LumaPages.ShopByGender.ClickmenShoppingbtn(ShopByGender.java:115)
+	at LumaTestCases.CheckOutAllGendersShop.CheckoutMensItemsBottom(CheckOutAllGendersShop.java:62)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>1</td>
+<td>LumaTestCases.CheckOutAllGendersShop@3829ac1</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -220,110 +542,100 @@ Session ID: 294096f8ef465b09d670a1257b0b2d7a
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='LumaTestCases.ProfileTest.ValidateProfilePicUpdate()'><b>ValidateProfilePicUpdate</b><br>Test class: LumaTestCases.ProfileTest</td>
+<td title='LumaTestCases.AboutUsTestCase.ValidateContactLuma()'><b>ValidateContactLuma</b><br>Test class: LumaTestCases.AboutUsTestCase</td>
 <td></td>
-<td>29</td>
-<td>LumaTestCases.ProfileTest@3de8f619</td></tr>
+<td>8</td>
+<td>LumaTestCases.AboutUsTestCase@76f7d241</td></tr>
 <tr>
-<td title='LumaTestCases.AboutUsTestCase.ValidateCoustmerService()'><b>ValidateCoustmerService</b><br>Test class: LumaTestCases.AboutUsTestCase</td>
+<td title='LumaTestCases.LumaLoginTest.LoginWithInvalidCred()'><b>LoginWithInvalidCred</b><br>Test class: LumaTestCases.LumaLoginTest</td>
 <td></td>
-<td>5</td>
-<td>LumaTestCases.AboutUsTestCase@eadd4fb</td></tr>
+<td>7</td>
+<td>LumaTestCases.LumaLoginTest@5ce33a58</td></tr>
+<tr>
+<td title='LumaTestCases.LumaLoginTest.Login_With_FaceBook()'><b>Login_With_FaceBook</b><br>Test class: LumaTestCases.LumaLoginTest</td>
+<td></td>
+<td>2</td>
+<td>LumaTestCases.LumaLoginTest@5ce33a58</td></tr>
+<tr>
+<td title='LumaTestCases.ProfileTest.validateEditProfileSettings()'><b>validateEditProfileSettings</b><br>Test class: LumaTestCases.ProfileTest</td>
+<td></td>
+<td>1</td>
+<td>LumaTestCases.ProfileTest@2783717b</td></tr>
+<tr>
+<td title='LumaTestCases.CheckOutItems.ValidateAddCart()'><b>ValidateAddCart</b><br>Test class: LumaTestCases.CheckOutItems</td>
+<td></td>
+<td>22</td>
+<td>LumaTestCases.CheckOutItems@4a335fa8</td></tr>
 <tr>
 <td title='LumaTestCases.BlogTestCase.ValidateBlog2()'><b>ValidateBlog2</b><br>Test class: LumaTestCases.BlogTestCase</td>
 <td></td>
 <td>5</td>
-<td>LumaTestCases.BlogTestCase@239a307b</td></tr>
-<tr>
-<td title='LumaTestCases.LumaLoginTest.LoginTestR()'><b>LoginTestR</b><br>Test class: LumaTestCases.LumaLoginTest</td>
-<td></td>
-<td>13</td>
-<td>LumaTestCases.LumaLoginTest@6c4906d3</td></tr>
-<tr>
-<td title='LumaTestCases.CheckOutAllGendersShop.CheckoutMensItemsBottom()'><b>CheckoutMensItemsBottom</b><br>Test class: LumaTestCases.CheckOutAllGendersShop</td>
-<td></td>
-<td>39</td>
-<td>LumaTestCases.CheckOutAllGendersShop@7bd7d6d6</td></tr>
+<td>LumaTestCases.BlogTestCase@4baf352a</td></tr>
 <tr>
 <td title='LumaTestCases.AboutUsTestCase.ValidatePrivacyPolicy()'><b>ValidatePrivacyPolicy</b><br>Test class: LumaTestCases.AboutUsTestCase</td>
 <td></td>
-<td>5</td>
-<td>LumaTestCases.AboutUsTestCase@eadd4fb</td></tr>
+<td>7</td>
+<td>LumaTestCases.AboutUsTestCase@76f7d241</td></tr>
 <tr>
-<td title='LumaTestCases.CheckOutAllGendersShop.CheckOutWomenItems()'><b>CheckOutWomenItems</b><br>Test class: LumaTestCases.CheckOutAllGendersShop</td>
-<td></td>
-<td>63</td>
-<td>LumaTestCases.CheckOutAllGendersShop@7bd7d6d6</td></tr>
-<tr>
-<td title='LumaTestCases.ProfileTest.ValidateChangePassoword()'><b>ValidateChangePassoword</b><br>Test class: LumaTestCases.ProfileTest</td>
-<td></td>
-<td>0</td>
-<td>LumaTestCases.ProfileTest@3de8f619</td></tr>
-<tr>
-<td title='LumaTestCases.CheckOutItems.ValidateAddCart()'><b>ValidateAddCart</b><br>Test class: LumaTestCases.CheckOutItems</td>
-<td></td>
-<td>30</td>
-<td>LumaTestCases.CheckOutItems@4e5ed836</td></tr>
-<tr>
-<td title='LumaTestCases.CheckOutAllGendersShop.CheckOutMensItems()'><b>CheckOutMensItems</b><br>Test class: LumaTestCases.CheckOutAllGendersShop</td>
-<td></td>
-<td>46</td>
-<td>LumaTestCases.CheckOutAllGendersShop@7bd7d6d6</td></tr>
-<tr>
-<td title='LumaTestCases.BlogTestCase.ValidateBlog3()'><b>ValidateBlog3</b><br>Test class: LumaTestCases.BlogTestCase</td>
-<td></td>
-<td>5</td>
-<td>LumaTestCases.BlogTestCase@239a307b</td></tr>
-<tr>
-<td title='LumaTestCases.CheckOutItems.ValidateRemoveFromCart()'><b>ValidateRemoveFromCart</b><br>Test class: LumaTestCases.CheckOutItems</td>
-<td></td>
-<td>20</td>
-<td>LumaTestCases.CheckOutItems@4e5ed836</td></tr>
-<tr>
-<td title='LumaTestCases.BlogTestCase.ValidateBlog1()'><b>ValidateBlog1</b><br>Test class: LumaTestCases.BlogTestCase</td>
+<td title='LumaTestCases.AboutUsTestCase.ValidateCoustmerService()'><b>ValidateCoustmerService</b><br>Test class: LumaTestCases.AboutUsTestCase</td>
 <td></td>
 <td>6</td>
-<td>LumaTestCases.BlogTestCase@239a307b</td></tr>
+<td>LumaTestCases.AboutUsTestCase@76f7d241</td></tr>
 <tr>
-<td title='LumaTestCases.LumaLoginTest.LoginWithInvalidCred()'><b>LoginWithInvalidCred</b><br>Test class: LumaTestCases.LumaLoginTest</td>
+<td title='LumaTestCases.LumaLoginTest.ValidateLogoutFuntionlity()'><b>ValidateLogoutFuntionlity</b><br>Test class: LumaTestCases.LumaLoginTest</td>
 <td></td>
-<td>9</td>
-<td>LumaTestCases.LumaLoginTest@6c4906d3</td></tr>
-<tr>
-<td title='LumaTestCases.CheckOutAllGendersShop.CheckOutEquipmentsItems()'><b>CheckOutEquipmentsItems</b><br>Test class: LumaTestCases.CheckOutAllGendersShop</td>
-<td></td>
-<td>39</td>
-<td>LumaTestCases.CheckOutAllGendersShop@7bd7d6d6</td></tr>
+<td>3</td>
+<td>LumaTestCases.LumaLoginTest@5ce33a58</td></tr>
 <tr>
 <td title='LumaTestCases.CreateLumaAccounTest.ValidateCreateAccountWithEmail()'><b>ValidateCreateAccountWithEmail</b><br>Test class: LumaTestCases.CreateLumaAccounTest</td>
 <td></td>
-<td>5</td>
-<td>LumaTestCases.CreateLumaAccounTest@2ab4bc72</td></tr>
+<td>7</td>
+<td>LumaTestCases.CreateLumaAccounTest@3f363cf5</td></tr>
+<tr>
+<td title='LumaTestCases.BlogTestCase.ValidateBlog1()'><b>ValidateBlog1</b><br>Test class: LumaTestCases.BlogTestCase</td>
+<td></td>
+<td>7</td>
+<td>LumaTestCases.BlogTestCase@4baf352a</td></tr>
 <tr>
 <td title='LumaTestCases.AboutUsTestCase.ValidateAbouts()'><b>ValidateAbouts</b><br>Test class: LumaTestCases.AboutUsTestCase</td>
 <td></td>
 <td>3</td>
-<td>LumaTestCases.AboutUsTestCase@eadd4fb</td></tr>
+<td>LumaTestCases.AboutUsTestCase@76f7d241</td></tr>
 <tr>
-<td title='LumaTestCases.AboutUsTestCase.ValidateContactLuma()'><b>ValidateContactLuma</b><br>Test class: LumaTestCases.AboutUsTestCase</td>
+<td title='LumaTestCases.LumaLoginTest.LoginTestR()'><b>LoginTestR</b><br>Test class: LumaTestCases.LumaLoginTest</td>
 <td></td>
-<td>7</td>
-<td>LumaTestCases.AboutUsTestCase@eadd4fb</td></tr>
+<td>14</td>
+<td>LumaTestCases.LumaLoginTest@5ce33a58</td></tr>
 <tr>
-<td title='LumaTestCases.ProfileTest.validateEditProfileSettings()'><b>validateEditProfileSettings</b><br>Test class: LumaTestCases.ProfileTest</td>
+<td title='LumaTestCases.CheckOutItems.ValidateRemoveFromCart()'><b>ValidateRemoveFromCart</b><br>Test class: LumaTestCases.CheckOutItems</td>
+<td></td>
+<td>18</td>
+<td>LumaTestCases.CheckOutItems@4a335fa8</td></tr>
+<tr>
+<td title='LumaTestCases.ProfileTest.ValidateChangePassoword()'><b>ValidateChangePassoword</b><br>Test class: LumaTestCases.ProfileTest</td>
 <td></td>
 <td>0</td>
-<td>LumaTestCases.ProfileTest@3de8f619</td></tr>
-<tr>
-<td title='LumaTestCases.CheckOutItems.ValidateOrderPlaceMent()'><b>ValidateOrderPlaceMent</b><br>Test class: LumaTestCases.CheckOutItems</td>
-<td></td>
-<td>19</td>
-<td>LumaTestCases.CheckOutItems@4e5ed836</td></tr>
+<td>LumaTestCases.ProfileTest@2783717b</td></tr>
 <tr>
 <td title='LumaTestCases.CreateLumaAccounTest.CreateAccounTest()'><b>CreateAccounTest</b><br>Test class: LumaTestCases.CreateLumaAccounTest</td>
 <td></td>
+<td>11</td>
+<td>LumaTestCases.CreateLumaAccounTest@3f363cf5</td></tr>
+<tr>
+<td title='LumaTestCases.CheckOutItems.EnterCheckOutInfo()'><b>EnterCheckOutInfo</b><br>Test class: LumaTestCases.CheckOutItems</td>
+<td></td>
+<td>20</td>
+<td>LumaTestCases.CheckOutItems@4a335fa8</td></tr>
+<tr>
+<td title='LumaTestCases.ProfileTest.ValidateProfilePicUpdate()'><b>ValidateProfilePicUpdate</b><br>Test class: LumaTestCases.ProfileTest</td>
+<td></td>
 <td>24</td>
-<td>LumaTestCases.CreateLumaAccounTest@2ab4bc72</td></tr>
+<td>LumaTestCases.ProfileTest@2783717b</td></tr>
+<tr>
+<td title='LumaTestCases.BlogTestCase.ValidateBlog3()'><b>ValidateBlog3</b><br>Test class: LumaTestCases.BlogTestCase</td>
+<td></td>
+<td>6</td>
+<td>LumaTestCases.BlogTestCase@4baf352a</td></tr>
 </table><p>
 </body>
 </html>

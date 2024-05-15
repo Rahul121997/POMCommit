@@ -106,11 +106,10 @@ public class ShopNowPage extends BaseClass{
 		
 		PageFactory.initElements(driver, this);
 	}
-
-
 	public void ClickOnShopNowBtn()
 	{
-		shopNowBtn.click();
+		WebElement shopNowBtn1 = wait.until(ExpectedConditions.visibilityOf(shopNowBtn));
+		shopNowBtn1.click();
 	}
 
 	public void ClickOnProduct1()
@@ -135,12 +134,12 @@ public class ShopNowPage extends BaseClass{
 	public void ClickOnCheckOutBtnLast()
 	{
 		System.out.println("2ng last");
-		WebElement checkOut11= wait.until(ExpectedConditions.elementToBeClickable(checkout));
+		WebElement checkOut11= wait.until(ExpectedConditions.visibilityOf(checkout));
 		checkOut11.click();
 	}
 
 	public void ClickOnCheckOutBtnLast1() {
-		WebElement checkOut1=wait.until(ExpectedConditions.elementToBeClickable(checkOutspc)); 
+		WebElement checkOut1=wait.until(ExpectedConditions.visibilityOf(checkOutspc)); 
 		checkOut1.click(); 
 	}
 

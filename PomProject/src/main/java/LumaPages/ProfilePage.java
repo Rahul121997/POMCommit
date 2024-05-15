@@ -54,7 +54,7 @@ public class ProfilePage extends BaseClass {
 	@FindBy(xpath="//input[@name='confirmPwd']")
 	WebElement confirmPwdTextBox;
 
-	@FindBy(xpath="//button[@id='change-password-submit']")
+	@FindBy(id="change-password-submit")
 	WebElement SavePwdBtn;
 
 	@FindBy(xpath="//select[@id='scf-gender-list']")
@@ -197,8 +197,10 @@ public class ProfilePage extends BaseClass {
 
 	public void ClickOnSavePwd()
 	{
-
-		SavePwdBtn.click();
+		WebElement SavePwdBtn1=wait.until(ExpectedConditions.elementToBeClickable(SavePwdBtn));
+		SavePwdBtn1.click();
+			
+		
 	}
 
 

@@ -9,11 +9,12 @@ import java.io.IOException;
 
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import LumaPages.ProfilePage;
 import Pages.BaseClass;
-
+@Listeners(Listensers.MyListener.class)
 public class ProfileTest extends BaseClass {
 
 	public static ProfilePage pc;
@@ -53,10 +54,14 @@ public class ProfileTest extends BaseClass {
 	}
 	
 	
-	  @Test(priority=3) public void ValidateChangePassoword() {
-	  pc.ClickChangePassword(); pc.EnterCurrentPwd("abc@12345");
-	  pc.EnterNewPwd("abc@123456"); pc.ConfrimNewPwd("abc@123456");
-	  pc.ClickOnSavePwd(); }
+	  @Test(priority=3) public void ValidateChangePassoword() 
+	  {
+	  pc.ClickChangePassword(); 
+	  pc.EnterCurrentPwd("abc@12345");
+	  pc.EnterNewPwd("abc@123456"); 
+	  pc.ConfrimNewPwd("abc@123456");
+	  pc.ClickOnSavePwd(); 
+	  }
 	 
 	
 	  @AfterClass 

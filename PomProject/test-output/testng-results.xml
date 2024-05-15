@@ -1,37 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-05-08T11:54:34 IST" name="Default suite" finished-at="2024-05-08T11:55:21 IST" duration-ms="46976">
+  <suite started-at="2024-05-12T19:55:46 IST" name="Default suite" finished-at="2024-05-12T19:56:22 IST" duration-ms="35224">
     <groups>
     </groups>
-    <test started-at="2024-05-08T11:54:34 IST" name="Default test" finished-at="2024-05-08T11:55:21 IST" duration-ms="46976">
-      <class name="LumaTestCases.AboutUsTestCase">
-        <test-method is-config="true" signature="Start()[pri:0, instance:LumaTestCases.AboutUsTestCase@652a7737]" started-at="2024-05-08T11:54:34 IST" name="Start" finished-at="2024-05-08T11:54:58 IST" duration-ms="23682" status="PASS">
+    <test started-at="2024-05-12T19:55:46 IST" name="Default test" finished-at="2024-05-12T19:56:22 IST" duration-ms="35224">
+      <class name="LumaTestCases.BlogTestCase">
+        <test-method is-config="true" signature="Start()[pri:0, instance:LumaTestCases.BlogTestCase@5827af16]" started-at="2024-05-12T19:55:46 IST" name="Start" finished-at="2024-05-12T19:56:01 IST" duration-ms="14569" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Start -->
-        <test-method signature="ValidateAbouts()[pri:0, instance:LumaTestCases.AboutUsTestCase@652a7737]" started-at="2024-05-08T11:54:58 IST" name="ValidateAbouts" finished-at="2024-05-08T11:55:02 IST" duration-ms="3971" status="PASS">
+        <test-method signature="ValidateBlog1()[pri:1, instance:LumaTestCases.BlogTestCase@5827af16]" started-at="2024-05-12T19:56:01 IST" name="ValidateBlog1" finished-at="2024-05-12T19:56:08 IST" duration-ms="6959" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ValidateAbouts -->
-        <test-method signature="ValidateContactLuma()[pri:0, instance:LumaTestCases.AboutUsTestCase@652a7737]" started-at="2024-05-08T11:55:02 IST" name="ValidateContactLuma" finished-at="2024-05-08T11:55:09 IST" duration-ms="7402" status="PASS">
+        </test-method> <!-- ValidateBlog1 -->
+        <test-method signature="ValidateBlog2()[pri:2, instance:LumaTestCases.BlogTestCase@5827af16]" started-at="2024-05-12T19:56:08 IST" name="ValidateBlog2" finished-at="2024-05-12T19:56:15 IST" duration-ms="6474" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ValidateContactLuma -->
-        <test-method signature="ValidateCoustmerService()[pri:0, instance:LumaTestCases.AboutUsTestCase@652a7737]" started-at="2024-05-08T11:55:09 IST" name="ValidateCoustmerService" finished-at="2024-05-08T11:55:15 IST" duration-ms="5842" status="PASS">
+        </test-method> <!-- ValidateBlog2 -->
+        <test-method signature="ValidateBlog3()[pri:3, instance:LumaTestCases.BlogTestCase@5827af16]" started-at="2024-05-12T19:56:15 IST" name="ValidateBlog3" finished-at="2024-05-12T19:56:21 IST" duration-ms="6370" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ValidateCoustmerService -->
-        <test-method signature="ValidatePrivacyPolicy()[pri:0, instance:LumaTestCases.AboutUsTestCase@652a7737]" started-at="2024-05-08T11:55:15 IST" name="ValidatePrivacyPolicy" finished-at="2024-05-08T11:55:21 IST" duration-ms="5911" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ValidatePrivacyPolicy -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:LumaTestCases.AboutUsTestCase@652a7737]" started-at="2024-05-08T11:55:21 IST" name="TearDown" finished-at="2024-05-08T11:55:21 IST" duration-ms="113" status="PASS">
+        </test-method> <!-- ValidateBlog3 -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:LumaTestCases.BlogTestCase@5827af16]" started-at="2024-05-12T19:56:21 IST" name="TearDown" finished-at="2024-05-12T19:56:22 IST" duration-ms="129" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
-      </class> <!-- LumaTestCases.AboutUsTestCase -->
+      </class> <!-- LumaTestCases.BlogTestCase -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
