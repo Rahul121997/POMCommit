@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="LumaTestCases.ProfileTest">
+      <class name="LumaTestCases.LumaCommunityTest">
         <methods>
-          <include name="ValidateChangePassoword"/>
-          <include name="TearDown"/>
           <include name="Start"/>
-          <include name="ValidateProfilePicUpdate"/>
+          <include name="TearDown"/>
+          <include name="ValidateMyaccountBtn"/>
         </methods>
-      </class> <!-- LumaTestCases.ProfileTest -->
+      </class> <!-- LumaTestCases.LumaCommunityTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -3,13 +3,6 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="LumaTestCases.ProfileTest">
-        <methods>
-          <include name="ValidateChangePassoword"/>
-          <include name="TearDown"/>
-          <include name="Start"/>
-        </methods>
-      </class> <!-- LumaTestCases.ProfileTest -->
       <class name="LumaTestCases.CheckOutAllGendersShop">
         <methods>
           <include name="TearDown"/>
@@ -27,6 +20,12 @@
           <include name="Setup"/>
         </methods>
       </class> <!-- LumaTestCases.LumaLoginTest -->
+      <class name="RoughPkg.Tests">
+        <methods>
+          <include name="Test"/>
+          <include name="testHelloWorld"/>
+        </methods>
+      </class> <!-- RoughPkg.Tests -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

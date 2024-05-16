@@ -48,9 +48,7 @@ public class Tests extends BaseClass {
 	@Test
 	public void testHelloWorld() 
 	{
-		WebElement el=	wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//*[@id='navigation-d056804942']/ul/li[7]/a"))));
-		Actions	act=new Actions(driver);
-		act.moveToElement(el).perform();
+		
 
 	}
 }

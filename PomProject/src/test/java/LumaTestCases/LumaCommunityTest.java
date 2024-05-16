@@ -1,7 +1,11 @@
 package LumaTestCases;
 
+import java.io.FileReader;
 import java.io.IOException;
+import java.util.Properties;
 
+import org.testng.Assert;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -10,32 +14,53 @@ import Pages.BaseClass;
 
 public class LumaCommunityTest extends BaseClass{
 
-
+	public static FileReader reader;
+	public static Properties p;
 	public LumaCommunityPage lcp;
+	LumaLoginTest lpgd;
 
-	@BeforeClass
-	public void Start()
+	@BeforeClass(alwaysRun=true)
+	public void Start() throws IOException
 	{
+		lpgd=new LumaLoginTest();
 		MainRun();
+		lpgd.LoginTestR();
 	}
 
-
-	public void CommunityFileUpload() throws IOException, InterruptedException
+	@Test(priority=1)
+	public void ValidateCommunityButton() throws IOException 
 	{
-
+		p=new Properties();
+		reader=new FileReader(AboutUsTestCase.path);
+		p.load(reader);
 		lcp=new LumaCommunityPage();
-		lcp.HoverToCommunityTab();
-
-		lcp.ClickOnFilesBtn();
-		lcp.ClickOnCreateNewBtn();
-		lcp.ChooseFileBtn("C:\\Users\\Rahul\\Documents\\NewFileUpload.exe");
-		lcp.EnterFileDescription("ForTestPurpose"); lcp.ClickonOKFileBtn1(); 		 	
+		log.info("click on community section");
+		lcp.ClickOnToCommunityTab();
+		String acutalurel=lcp.ReturCurrent();
+		System.out.println(acutalurel);
+		System.out.println(p.getProperty("communityurl"));
+		log.info("validate community section url");
+		Assert.assertEquals(acutalurel,p.getProperty("communityurl"));
 	}
 
-	@BeforeClass
+	@Test(priority=2)
+	public void ValidateMyaccountBtn()
+	{	log.info("click on my account section");
+		lcp.ClickMyAccount();
+		String acutalurel=lcp.ReturCurrent();
+		System.out.println(p.getProperty("communityurl"+"::::::::"));
+		log.info("validate my account section url");
+		Assert.assertEquals(acutalurel,p.getProperty("accounturl"));
+	}
+
+	@AfterClass
 	public void TearDown()
 	{
+
 		CloseDriver();
 	}
+
+
+
 
 }
