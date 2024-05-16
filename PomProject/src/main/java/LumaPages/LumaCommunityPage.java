@@ -47,7 +47,7 @@ public class LumaCommunityPage extends BaseClass{
 	{
 		WebElement CommunityBtn1=wait.until(ExpectedConditions.elementToBeClickable(CommunityBtn));
 		CommunityBtn1.click();
-		//ActionsHover(CommunityBtn1);
+		ActionsHover(CommunityBtn1);
 	}	
 	
 	public void ClickOnFilesBtn()

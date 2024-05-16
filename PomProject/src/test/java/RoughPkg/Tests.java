@@ -21,6 +21,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -47,10 +48,9 @@ public class Tests extends BaseClass {
 	@Test
 	public void testHelloWorld() 
 	{
-		
-		WebElement el=driver.findElement(By.xpath("//*[@id=\"navigation-9383188745\"]/ul/li[7]/a"));
+		WebElement el=	wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//*[@id='navigation-d056804942']/ul/li[7]/a"))));
 		Actions	act=new Actions(driver);
-		act.moveToElement(el).clickAndHold().perform();
+		act.moveToElement(el).perform();
 
 	}
 }

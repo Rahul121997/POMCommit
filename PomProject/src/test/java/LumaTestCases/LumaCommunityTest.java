@@ -26,7 +26,8 @@ public class LumaCommunityTest extends BaseClass{
 		lcp=new LumaCommunityPage();
 		lcp.HoverToCommunityTab();
 
-		lcp.ClickOnFilesBtn(); lcp.ClickOnCreateNewBtn();
+		lcp.ClickOnFilesBtn();
+		lcp.ClickOnCreateNewBtn();
 		lcp.ChooseFileBtn("C:\\Users\\Rahul\\Documents\\NewFileUpload.exe");
 		lcp.EnterFileDescription("ForTestPurpose"); lcp.ClickonOKFileBtn1(); 		 	
 	}

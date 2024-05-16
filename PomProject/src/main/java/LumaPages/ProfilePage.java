@@ -52,9 +52,9 @@ public class ProfilePage extends BaseClass {
 	WebElement newPwdTextBox;
 
 	@FindBy(xpath="//input[@name='confirmPwd']")
-	WebElement confirmPwdTextBox;
+	WebElement confirmPwdTextBox1;
 
-	@FindBy(id="change-password-submit")
+	@FindBy(xpath="//button[@evt='click=changePassword']")
 	WebElement SavePwdBtn;
 
 	@FindBy(xpath="//select[@id='scf-gender-list']")
@@ -186,19 +186,21 @@ public class ProfilePage extends BaseClass {
 
 	public void EnterNewPwd(String NewPwd)
 	{
-		newPwdTextBox.sendKeys(NewPwd);
+		WebElement newPwdTextBox1=wait.until(ExpectedConditions.visibilityOf(newPwdTextBox));
+		newPwdTextBox1.sendKeys(NewPwd);
 	}
 
 	public void ConfrimNewPwd(String ConfrmNewPwd)
 	{
-		WebElement confirmPwdTextBox1=wait.until(ExpectedConditions.visibilityOf(confirmPwdTextBox));
-		confirmPwdTextBox1.sendKeys(ConfrmNewPwd);
+		WebElement confirmPwdTextBox2=wait.until(ExpectedConditions.visibilityOf(confirmPwdTextBox1));
+		confirmPwdTextBox2.sendKeys(ConfrmNewPwd);
 	}
 
 	public void ClickOnSavePwd()
 	{
 		WebElement SavePwdBtn1=wait.until(ExpectedConditions.visibilityOf(SavePwdBtn));
-		SavePwdBtn1.click();
+		wait.until(ExpectedConditions.elementToBeClickable(SavePwdBtn1)).click();
+		
 			
 		
 	}

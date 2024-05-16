@@ -113,7 +113,7 @@ public class BaseClass {
 	}
 	public void ActionsHover(WebElement element)
 	{
-		act.moveToElement(element).build().perform();
+		act.moveToElement(element).clickAndHold(element).build().perform();
 	}
 
 	public String RandomNum(String Uniq)

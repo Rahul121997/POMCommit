@@ -66,28 +66,27 @@ public class ProfileTest extends BaseClass {
 	}
 
 
-	@Test(priority=3) public void ValidateChangePassoword() 
+	@Test(priority=3,retryAnalyzer=Listensers.RetryFailTest.class)
+	public void ValidateChangePassoword() 
 	{
 		log.info("click on edit change password button");
 		pc.ClickChangePassword(); 
-		
+
 		log.info("enter current password");
 		pc.EnterCurrentPwd("abc@12345");
-		
+
 		log.info("enter current new password");
 		pc.EnterNewPwd("abc@123456"); 
-		
+
 		log.info("enter confrim  password");
 		pc.ConfrimNewPwd("abc@123456");
-		
+
 		log.info("click on  save  password button");
 		pc.ClickOnSavePwd(); 
 	}
 
-
-	@AfterClass 
-	public void TearDown() 
-	{ 
+	@AfterClass public void TearDown() 
+	{
 		CloseDriver();
 
 	}

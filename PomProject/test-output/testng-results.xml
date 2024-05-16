@@ -1,37 +1,313 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results retried="3" ignored="3" total="9" passed="2" failed="1" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[Click to see ScreenShot]]>
+    </line>
   </reporter-output>
-  <suite started-at="2024-05-16T14:59:23 IST" name="Default suite" finished-at="2024-05-16T15:00:28 IST" duration-ms="64984">
+  <suite started-at="2024-05-16T16:48:14 IST" name="Default suite" finished-at="2024-05-16T16:49:09 IST" duration-ms="54659">
     <groups>
     </groups>
-    <test started-at="2024-05-16T14:59:23 IST" name="Default test" finished-at="2024-05-16T15:00:28 IST" duration-ms="64984">
-      <class name="LumaTestCases.CheckOutItems">
-        <test-method is-config="true" signature="Start()[pri:0, instance:LumaTestCases.CheckOutItems@2289aca5]" started-at="2024-05-16T14:59:23 IST" name="Start" finished-at="2024-05-16T14:59:35 IST" duration-ms="11628" status="PASS">
+    <test started-at="2024-05-16T16:48:14 IST" name="Default test" finished-at="2024-05-16T16:49:09 IST" duration-ms="54659">
+      <class name="LumaTestCases.ProfileTest">
+        <test-method is-config="true" signature="Start()[pri:0, instance:LumaTestCases.ProfileTest@4f936da8]" started-at="2024-05-16T16:48:14 IST" name="Start" finished-at="2024-05-16T16:48:26 IST" duration-ms="11327" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Start -->
-        <test-method signature="ValidateAddCart()[pri:1, instance:LumaTestCases.CheckOutItems@2289aca5]" started-at="2024-05-16T14:59:35 IST" name="ValidateAddCart" finished-at="2024-05-16T14:59:54 IST" duration-ms="18916" status="PASS">
+        <test-method signature="ValidateProfilePicUpdate()[pri:1, instance:LumaTestCases.ProfileTest@4f936da8]" started-at="2024-05-16T16:48:26 IST" name="ValidateProfilePicUpdate" finished-at="2024-05-16T16:48:46 IST" duration-ms="20123" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ValidateAddCart -->
-        <test-method signature="ValidateCheckOutButton()[pri:2, instance:LumaTestCases.CheckOutItems@2289aca5]" started-at="2024-05-16T14:59:56 IST" name="ValidateCheckOutButton" finished-at="2024-05-16T15:00:03 IST" duration-ms="7587" status="PASS">
+        </test-method> <!-- ValidateProfilePicUpdate -->
+        <test-method signature="validateEditProfileSettings()[pri:2, instance:LumaTestCases.ProfileTest@4f936da8]" started-at="2024-05-16T16:48:48 IST" name="validateEditProfileSettings" finished-at="2024-05-16T16:48:49 IST" duration-ms="1270" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ValidateCheckOutButton -->
-        <test-method signature="EnterCheckOutInfo()[pri:3, instance:LumaTestCases.CheckOutItems@2289aca5]" started-at="2024-05-16T15:00:03 IST" name="EnterCheckOutInfo" finished-at="2024-05-16T15:00:13 IST" duration-ms="9525" status="PASS">
+        </test-method> <!-- validateEditProfileSettings -->
+        <test-method retried="true" signature="ValidateChangePassoword()[pri:3, instance:LumaTestCases.ProfileTest@4f936da8]" started-at="2024-05-16T16:48:49 IST" name="ValidateChangePassoword" finished-at="2024-05-16T16:49:05 IST" duration-ms="16198" status="SKIP">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "Object.getClass()" because "exceptionDriver" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "Object.getClass()" because "exceptionDriver" is null
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at LumaPages.ProfilePage.ConfrimNewPwd(ProfilePage.java:195)
+at LumaTestCases.ProfileTest.ValidateChangePassoword(ProfileTest.java:82)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- EnterCheckOutInfo -->
-        <test-method signature="ValidateRemoveFromCart()[pri:4, instance:LumaTestCases.CheckOutItems@2289aca5]" started-at="2024-05-16T15:00:13 IST" name="ValidateRemoveFromCart" finished-at="2024-05-16T15:00:28 IST" duration-ms="14637" status="PASS">
+        </test-method> <!-- ValidateChangePassoword -->
+        <test-method retried="true" signature="ValidateChangePassoword()[pri:3, instance:LumaTestCases.ProfileTest@4f936da8]" started-at="2024-05-16T16:49:05 IST" name="ValidateChangePassoword" finished-at="2024-05-16T16:49:06 IST" duration-ms="1146" status="SKIP">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <button type="submit" class="btn btn-primary" evt="click=showPasswordBox">...</button> is not clickable at point (297, 48). Other element would receive the click: <div class="scf scf-modal-screen"></div>
+  (Session info: chrome=124.0.6367.201)
+Build info: version: '4.19.1', revision: 'abe0ee07dc'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3619d7938e295140d35fef7db6a9bfa8, clickElement {id=f.73F06462B3A4B3406686263F104D12B8.d.70B6C592BD167A00F5D17BF8F9980673.e.275}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 124.0.6367.201, chrome: {chromedriverVersion: 124.0.6367.207 (a9001a6e39f..., userDataDir: C:\Users\Rahul\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49288}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49288/devtoo..., se:cdpVersion: 124.0.6367.201, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (3619d7938e295140d35fef7db6a9bfa8)] -> xpath: //button[text()='Change Password']]
+Session ID: 3619d7938e295140d35fef7db6a9bfa8]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button type="submit" class="btn btn-primary" evt="click=showPasswordBox">...</button> is not clickable at point (297, 48). Other element would receive the click: <div class="scf scf-modal-screen"></div>
+  (Session info: chrome=124.0.6367.201)
+Build info: version: '4.19.1', revision: 'abe0ee07dc'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3619d7938e295140d35fef7db6a9bfa8, clickElement {id=f.73F06462B3A4B3406686263F104D12B8.d.70B6C592BD167A00F5D17BF8F9980673.e.275}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 124.0.6367.201, chrome: {chromedriverVersion: 124.0.6367.207 (a9001a6e39f..., userDataDir: C:\Users\Rahul\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49288}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49288/devtoo..., se:cdpVersion: 124.0.6367.201, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (3619d7938e295140d35fef7db6a9bfa8)] -> xpath: //button[text()='Change Password']]
+Session ID: 3619d7938e295140d35fef7db6a9bfa8
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy28.click(Unknown Source)
+at LumaPages.ProfilePage.ClickChangePassword(ProfilePage.java:178)
+at LumaTestCases.ProfileTest.ValidateChangePassoword(ProfileTest.java:73)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:249)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ValidateRemoveFromCart -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:LumaTestCases.CheckOutItems@2289aca5]" started-at="2024-05-16T15:00:28 IST" name="TearDown" finished-at="2024-05-16T15:00:28 IST" duration-ms="500" status="PASS">
+        </test-method> <!-- ValidateChangePassoword -->
+        <test-method retried="true" signature="ValidateChangePassoword()[pri:3, instance:LumaTestCases.ProfileTest@4f936da8]" started-at="2024-05-16T16:49:06 IST" name="ValidateChangePassoword" finished-at="2024-05-16T16:49:08 IST" duration-ms="1120" status="SKIP">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <button type="submit" class="btn btn-primary" evt="click=showPasswordBox">...</button> is not clickable at point (297, 48). Other element would receive the click: <div class="scf scf-modal-screen"></div>
+  (Session info: chrome=124.0.6367.201)
+Build info: version: '4.19.1', revision: 'abe0ee07dc'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3619d7938e295140d35fef7db6a9bfa8, clickElement {id=f.73F06462B3A4B3406686263F104D12B8.d.70B6C592BD167A00F5D17BF8F9980673.e.275}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 124.0.6367.201, chrome: {chromedriverVersion: 124.0.6367.207 (a9001a6e39f..., userDataDir: C:\Users\Rahul\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49288}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49288/devtoo..., se:cdpVersion: 124.0.6367.201, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (3619d7938e295140d35fef7db6a9bfa8)] -> xpath: //button[text()='Change Password']]
+Session ID: 3619d7938e295140d35fef7db6a9bfa8]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button type="submit" class="btn btn-primary" evt="click=showPasswordBox">...</button> is not clickable at point (297, 48). Other element would receive the click: <div class="scf scf-modal-screen"></div>
+  (Session info: chrome=124.0.6367.201)
+Build info: version: '4.19.1', revision: 'abe0ee07dc'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3619d7938e295140d35fef7db6a9bfa8, clickElement {id=f.73F06462B3A4B3406686263F104D12B8.d.70B6C592BD167A00F5D17BF8F9980673.e.275}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 124.0.6367.201, chrome: {chromedriverVersion: 124.0.6367.207 (a9001a6e39f..., userDataDir: C:\Users\Rahul\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49288}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49288/devtoo..., se:cdpVersion: 124.0.6367.201, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (3619d7938e295140d35fef7db6a9bfa8)] -> xpath: //button[text()='Change Password']]
+Session ID: 3619d7938e295140d35fef7db6a9bfa8
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy28.click(Unknown Source)
+at LumaPages.ProfilePage.ClickChangePassword(ProfilePage.java:178)
+at LumaTestCases.ProfileTest.ValidateChangePassoword(ProfileTest.java:73)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:249)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TearDown -->
-      </class> <!-- LumaTestCases.CheckOutItems -->
+        </test-method> <!-- ValidateChangePassoword -->
+        <test-method signature="ValidateChangePassoword()[pri:3, instance:LumaTestCases.ProfileTest@4f936da8]" started-at="2024-05-16T16:49:08 IST" name="ValidateChangePassoword" finished-at="2024-05-16T16:49:09 IST" duration-ms="1202" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <button type="submit" class="btn btn-primary" evt="click=showPasswordBox">...</button> is not clickable at point (297, 48). Other element would receive the click: <div class="scf scf-modal-screen"></div>
+  (Session info: chrome=124.0.6367.201)
+Build info: version: '4.19.1', revision: 'abe0ee07dc'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3619d7938e295140d35fef7db6a9bfa8, clickElement {id=f.73F06462B3A4B3406686263F104D12B8.d.70B6C592BD167A00F5D17BF8F9980673.e.275}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 124.0.6367.201, chrome: {chromedriverVersion: 124.0.6367.207 (a9001a6e39f..., userDataDir: C:\Users\Rahul\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49288}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49288/devtoo..., se:cdpVersion: 124.0.6367.201, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (3619d7938e295140d35fef7db6a9bfa8)] -> xpath: //button[text()='Change Password']]
+Session ID: 3619d7938e295140d35fef7db6a9bfa8]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button type="submit" class="btn btn-primary" evt="click=showPasswordBox">...</button> is not clickable at point (297, 48). Other element would receive the click: <div class="scf scf-modal-screen"></div>
+  (Session info: chrome=124.0.6367.201)
+Build info: version: '4.19.1', revision: 'abe0ee07dc'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3619d7938e295140d35fef7db6a9bfa8, clickElement {id=f.73F06462B3A4B3406686263F104D12B8.d.70B6C592BD167A00F5D17BF8F9980673.e.275}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 124.0.6367.201, chrome: {chromedriverVersion: 124.0.6367.207 (a9001a6e39f..., userDataDir: C:\Users\Rahul\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49288}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49288/devtoo..., se:cdpVersion: 124.0.6367.201, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (3619d7938e295140d35fef7db6a9bfa8)] -> xpath: //button[text()='Change Password']]
+Session ID: 3619d7938e295140d35fef7db6a9bfa8
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy28.click(Unknown Source)
+at LumaPages.ProfilePage.ClickChangePassword(ProfilePage.java:178)
+at LumaTestCases.ProfileTest.ValidateChangePassoword(ProfileTest.java:73)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:249)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+            <line>
+              <![CDATA[Click to see ScreenShot]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- ValidateChangePassoword -->
+      </class> <!-- LumaTestCases.ProfileTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
