@@ -62,7 +62,7 @@ public class MyListener implements ITestListener {
 		System.out.println("Method skipped"+ result.getName());
 		extent.attachReporter(spark);
 		extent.createTest(result.getName().toUpperCase())
-		.log(Status.SKIP,result.getName().toUpperCase()+" is Skipped");
+		.log(Status.SKIP,result.getName().toUpperCase()+" is Skipped").log(Status.INFO,result.getThrowable());
 		extent.flush();
 	}
 

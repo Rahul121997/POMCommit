@@ -6,7 +6,9 @@
       <class name="LumaTestCases.ProfileTest">
         <methods>
           <include name="ValidateChangePassoword"/>
+          <include name="TearDown"/>
           <include name="Start"/>
+          <include name="ValidateProfilePicUpdate"/>
         </methods>
       </class> <!-- LumaTestCases.ProfileTest -->
     </classes>

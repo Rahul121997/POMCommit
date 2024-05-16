@@ -66,7 +66,7 @@ public class ProfileTest extends BaseClass {
 	}
 
 
-	@Test(priority=3,retryAnalyzer=Listensers.RetryFailTest.class)
+	@Test(priority=3,retryAnalyzer=Listensers.RetryFailTest.class,dependsOnMethods={"ValidateProfilePicUpdate","ValidateProfilePicUpdate"})
 	public void ValidateChangePassoword() 
 	{
 		log.info("click on edit change password button");
