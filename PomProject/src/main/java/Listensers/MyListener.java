@@ -41,9 +41,18 @@ public class MyListener implements ITestListener {
 	@Override
 	public  void onTestFailure(ITestResult result) 
 	{
+		
+		String Click_Here_forScreenShot=null;
+		try {
+			Click_Here_forScreenShot= BaseClass.TakeScreenShot();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		extent.attachReporter(spark);
 		extent.createTest(result.getName().toUpperCase())
-		.log(Status.FAIL,result.getName().toUpperCase()).log(Status.WARNING,result.getThrowable() );
+		.log(Status.FAIL,result.getName().toUpperCase()).log(Status.WARNING,result.getThrowable())
+		.addScreenCaptureFromBase64String(Click_Here_forScreenShot);
 		Reporter.log("Click to see ScreenShot");
 		extent.flush();
 	}

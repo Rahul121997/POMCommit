@@ -1,33 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-05-15T17:17:02 IST" name="Default suite" finished-at="2024-05-15T17:17:40 IST" duration-ms="38149">
+  <suite started-at="2024-05-16T14:59:23 IST" name="Default suite" finished-at="2024-05-16T15:00:28 IST" duration-ms="64984">
     <groups>
     </groups>
-    <test started-at="2024-05-15T17:17:02 IST" name="Default test" finished-at="2024-05-15T17:17:40 IST" duration-ms="38149">
-      <class name="LumaTestCases.ProfileTest">
-        <test-method is-config="true" signature="Start()[pri:0, instance:LumaTestCases.ProfileTest@452ba1db]" started-at="2024-05-15T17:17:02 IST" name="Start" finished-at="2024-05-15T17:17:15 IST" duration-ms="13164" status="PASS">
+    <test started-at="2024-05-16T14:59:23 IST" name="Default test" finished-at="2024-05-16T15:00:28 IST" duration-ms="64984">
+      <class name="LumaTestCases.CheckOutItems">
+        <test-method is-config="true" signature="Start()[pri:0, instance:LumaTestCases.CheckOutItems@2289aca5]" started-at="2024-05-16T14:59:23 IST" name="Start" finished-at="2024-05-16T14:59:35 IST" duration-ms="11628" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Start -->
-        <test-method signature="ValidateProfilePicUpdate()[pri:1, instance:LumaTestCases.ProfileTest@452ba1db]" started-at="2024-05-15T17:17:15 IST" name="ValidateProfilePicUpdate" finished-at="2024-05-15T17:17:36 IST" duration-ms="20641" status="PASS">
+        <test-method signature="ValidateAddCart()[pri:1, instance:LumaTestCases.CheckOutItems@2289aca5]" started-at="2024-05-16T14:59:35 IST" name="ValidateAddCart" finished-at="2024-05-16T14:59:54 IST" duration-ms="18916" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ValidateProfilePicUpdate -->
-        <test-method signature="validateEditProfileSettings()[pri:2, instance:LumaTestCases.ProfileTest@452ba1db]" started-at="2024-05-15T17:17:38 IST" name="validateEditProfileSettings" finished-at="2024-05-15T17:17:39 IST" duration-ms="1199" status="PASS">
+        </test-method> <!-- ValidateAddCart -->
+        <test-method signature="ValidateCheckOutButton()[pri:2, instance:LumaTestCases.CheckOutItems@2289aca5]" started-at="2024-05-16T14:59:56 IST" name="ValidateCheckOutButton" finished-at="2024-05-16T15:00:03 IST" duration-ms="7587" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateEditProfileSettings -->
-        <test-method signature="ValidateChangePassoword()[pri:3, instance:LumaTestCases.ProfileTest@452ba1db]" started-at="2024-05-15T17:17:39 IST" name="ValidateChangePassoword" finished-at="2024-05-15T17:17:40 IST" duration-ms="597" status="PASS">
+        </test-method> <!-- ValidateCheckOutButton -->
+        <test-method signature="EnterCheckOutInfo()[pri:3, instance:LumaTestCases.CheckOutItems@2289aca5]" started-at="2024-05-16T15:00:03 IST" name="EnterCheckOutInfo" finished-at="2024-05-16T15:00:13 IST" duration-ms="9525" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ValidateChangePassoword -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:LumaTestCases.ProfileTest@452ba1db]" started-at="2024-05-15T17:17:40 IST" name="TearDown" finished-at="2024-05-15T17:17:40 IST" duration-ms="431" status="PASS">
+        </test-method> <!-- EnterCheckOutInfo -->
+        <test-method signature="ValidateRemoveFromCart()[pri:4, instance:LumaTestCases.CheckOutItems@2289aca5]" started-at="2024-05-16T15:00:13 IST" name="ValidateRemoveFromCart" finished-at="2024-05-16T15:00:28 IST" duration-ms="14637" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateRemoveFromCart -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:LumaTestCases.CheckOutItems@2289aca5]" started-at="2024-05-16T15:00:28 IST" name="TearDown" finished-at="2024-05-16T15:00:28 IST" duration-ms="500" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
-      </class> <!-- LumaTestCases.ProfileTest -->
+      </class> <!-- LumaTestCases.CheckOutItems -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

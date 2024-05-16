@@ -13,10 +13,13 @@ import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
@@ -30,18 +33,29 @@ import Pages.BaseClass;
 
 public class Tests extends BaseClass {
 
+	LumaLoginTest lp;
+	
 
-	
-	 
-	    public void testHelloWorld() {
-	        log.debug("Sample DEBUG message");
-	        log.error("Sample ERROR message");
-	        log.info("Sample INFO message");
-	        log.warn("Sample WARN message");
-	    }
+	@BeforeClass
+	public void Test() throws IOException
+	{
+		MainRun();
+		lp=new LumaLoginTest();
+		lp.LoginTestR();
 	}
-	
-	
+
+	@Test
+	public void testHelloWorld() 
+	{
+		
+		WebElement el=driver.findElement(By.xpath("//*[@id=\"navigation-9383188745\"]/ul/li[7]/a"));
+		Actions	act=new Actions(driver);
+		act.moveToElement(el).clickAndHold().perform();
+
+	}
+}
+
+
 
 
 

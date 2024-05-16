@@ -24,6 +24,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
@@ -48,10 +49,6 @@ public class BaseClass {
 	public static FileInputStream stream;
 	public static Actions act;
 	public static Logger log = LogManager.getLogger();
-
-
-
-
 	public static String scrdate;
 	public static Properties p=new Properties();  ;
 
@@ -59,8 +56,10 @@ public class BaseClass {
 
 	public static void MainRun()
 	{
+		ChromeOptions options=new ChromeOptions();
+		options.setAcceptInsecureCerts(true);
 		log.info("Opening Chrome Browser");
-		driver = new ChromeDriver(); 
+		driver = new ChromeDriver(options); 
 		
 		log.info("redirecting to luma website");
 		driver.get("https://luma.enablementadobe.com/");
@@ -131,13 +130,14 @@ public class BaseClass {
 		js.executeScript("window.scrollBy(0, -250)");
 	}
 
-	public void TakeScreenShot() throws IOException
+	public static String TakeScreenShot() throws IOException
 	{
 		Date date=new Date();
 		System.out.println(date);
 		String scrdate=date.toString().replace(":","_").replace(" ","_");
-		File screenshotFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(screenshotFile, new File("C:\\Users\\Rahul\\git\\repository\\PomProject\\test-output\\ScreenShot\\"+scrdate+".jpg"));
+		String screenshotFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BASE64);
+		return screenshotFile;
+		
 	}
 
 	public void CloseDriver()
