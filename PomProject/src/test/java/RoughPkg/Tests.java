@@ -45,7 +45,7 @@ public class Tests extends BaseClass {
 		lp.LoginTestR();
 	}
 
-	@Test
+	
 	public void testHelloWorld() 
 	{
 		

@@ -5,9 +5,9 @@
     <classes>
       <class name="LumaTestCases.LumaLoginTest"/>
       <class name="LumaTestCases.ProfileTest"/>
-      <class name="LumaTestCases.AboutUsTestCase"/>
       <class name="LumaTestCases.CreateLumaAccounTest"/>
       <class name="LumaTestCases.CheckOutItems"/>
+      <class name="LumaTestCases.AboutUsTestCase"/>
       <class name="LumaTestCases.LumaCommunityTest"/>
       <class name="LumaTestCases.CheckOutAllGendersShop"/>
       <class name="RoughPkg.Tests"/>
