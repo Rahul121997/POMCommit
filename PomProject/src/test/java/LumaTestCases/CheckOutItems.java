@@ -14,11 +14,11 @@ import Pages.BaseClass;
 @Listeners(Listensers.MyListener.class)
 public class CheckOutItems extends BaseClass {
 
-	static LumaLoginTest lp;
-	static ShopByGender cog;
-	static ShopNowPage sp;
-	static FileReader reader;
-	static Properties p;
+	private LumaLoginTest lp;
+	private ShopByGender cog;
+	private ShopNowPage sp;
+	private FileReader reader;
+	private  Properties p;
 
 	@BeforeClass(alwaysRun = true)
 	public void Start() {
