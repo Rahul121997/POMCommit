@@ -27,9 +27,9 @@ public class LumaLoginTest extends BaseClass  {
 	
 
 	
-	public static  LoginPage lp;
-	public static FileReader reader;
-	public static Properties p;
+	private static  LoginPage lp;
+	private static FileReader reader;
+	private static Properties p;
 
 
 	@BeforeClass(alwaysRun=true)
