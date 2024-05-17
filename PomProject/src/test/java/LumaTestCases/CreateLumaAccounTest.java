@@ -17,9 +17,9 @@ import Pages.BaseClass;
 @Listeners(Listensers.MyListener.class)
 public class CreateLumaAccounTest extends BaseClass {
 	
-	public static LumaCreateAccountPages pg;
-	public static FileReader reader;
-	public static Properties p;
+	private  LumaCreateAccountPages pg;
+	private  FileReader reader;
+	private  Properties p;
 
 
 	@BeforeClass
