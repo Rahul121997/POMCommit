@@ -14,9 +14,9 @@ import Pages.BaseClass;
 
 public class LumaCommunityTest extends BaseClass{
 
-	public static FileReader reader;
-	public static Properties p;
-	public LumaCommunityPage lcp;
+	private  FileReader reader;
+	private  Properties p;
+	private LumaCommunityPage lcp;
 	LumaLoginTest lpgd;
 
 	@BeforeClass(alwaysRun=true)
