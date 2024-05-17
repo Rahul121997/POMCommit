@@ -15,9 +15,9 @@ import LumaPages.Blogs;
 import Pages.BaseClass;
 @Listeners(Listensers.MyListener.class)
 public class BlogTestCase extends BaseClass {
-	public static Blogs bl;
-	public static FileReader reader;
-	public static Properties p;
+	public  Blogs bl;
+	public  FileReader reader;
+	public  Properties p;
 	public static Logger log  = LogManager.getLogger(BlogTestCase.class);
 
 
