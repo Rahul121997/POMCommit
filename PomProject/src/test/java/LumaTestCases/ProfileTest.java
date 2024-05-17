@@ -19,10 +19,10 @@ import Pages.BaseClass;
 @Listeners(Listensers.MyListener.class)
 public class ProfileTest extends BaseClass {
 
-	public static ProfilePage pc;
-	public static FileReader reader;
-	public static Properties p;
-	public static LumaLoginTest lp;
+	private  ProfilePage pc;
+	private  FileReader reader;
+	private  Properties p;
+	private  LumaLoginTest lp;
 	@BeforeClass(alwaysRun=true)
 	public void Start()
 	{
