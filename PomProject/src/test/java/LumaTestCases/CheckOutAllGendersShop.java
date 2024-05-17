@@ -13,10 +13,10 @@ import Pages.BaseClass;
 @Listeners(Listensers.MyListener.class)
 public class CheckOutAllGendersShop extends BaseClass{
 
-	static ShopByGender spg;
-	static LumaLoginTest lg;
-	ShopNowPage sps;
-	static CheckOutItems cot;
+	private ShopByGender spg;
+	private LumaLoginTest lg;
+	private ShopNowPage sps;
+	private CheckOutItems cot;
 
 	@BeforeClass(alwaysRun=true)
 	public void Start()
