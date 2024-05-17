@@ -5,7 +5,9 @@ import java.awt.Robot;
 import java.awt.Toolkit;
 import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
+import java.io.FileReader;
 import java.io.IOException;
+import java.util.Properties;
 
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -18,7 +20,8 @@ import Pages.BaseClass;
 public class ProfileTest extends BaseClass {
 
 	public static ProfilePage pc;
-
+	public static FileReader reader;
+	public static Properties p;
 	public static LumaLoginTest lp;
 	@BeforeClass(alwaysRun=true)
 	public void Start()
@@ -31,6 +34,9 @@ public class ProfileTest extends BaseClass {
 	@Test(priority=1)
 	public void ValidateProfilePicUpdate() throws AWTException, InterruptedException, IOException 
 	{
+		p=new Properties();
+		reader=new FileReader(AboutUsTestCase.path);
+		p.load(reader);
 		lp=new LumaLoginTest();
 		pc=new ProfilePage();
 		lp.LoginTestR();
@@ -39,7 +45,7 @@ public class ProfileTest extends BaseClass {
 		log.info("click on Display picture image");
 		pc.ClickOnDPImage();
 		log.info("uploading image through autoIT ");
-		pc.UpLoadProfilePic("C:\\Users\\Rahul\\Documents\\Fileipload.exe");
+		pc.UpLoadProfilePic(p.getProperty("autoitsfilepath"));
 		log.info("click on save image button");
 		pc.SaveImageBtn();
 	}
@@ -49,18 +55,18 @@ public class ProfileTest extends BaseClass {
 	{
 		log.info("click on edit profile button");
 		pc.ClickOnEditProfile();
-		log.info("edit gender");
-		pc.ScreenGenderEdit("male");
-		log.info("edit address");
-		pc.EnterAddress("Gachibowli");
+		log.info("edit gender"+p.getProperty("gender"));
+		pc.ScreenGenderEdit(p.getProperty("gender"));
+		log.info("edit address"+p.getProperty("address1"));
+		pc.EnterAddress(p.getProperty("address1"));
 		log.info("edit  state name ");
-		pc.EnterCityState("Telegana");
-		log.info("change Select Lang to show to ON state");
-		pc.SelectLangtoshow("on");
-		log.info("Enter Bio Details Data");
-		pc.EnterBioDetailsData("Rahul,AGE:26,DOB:12/12/1997");
-		log.info("Enter job role");
-		pc.EnterJobTitleData("QA Engineer");
+		pc.EnterCityState(p.getProperty("state"));
+		log.info("change Select Lang to show to ON state "+p.getProperty("flag"));
+		pc.SelectLangtoshow(p.getProperty("flag"));
+		log.info("Enter Bio Details Data "+p.getProperty("NPA"));
+		pc.EnterBioDetailsData(p.getProperty("NPA"));
+		log.info("Enter job role "+p.getProperty("jobrole"));
+		pc.EnterJobTitleData(p.getProperty("jobrole"));
 		log.info("click on save changes button");
 		pc.ClickOnSaveChanges();
 	}
@@ -73,13 +79,13 @@ public class ProfileTest extends BaseClass {
 		pc.ClickChangePassword(); 
 
 		log.info("enter current password");
-		pc.EnterCurrentPwd("abc@12345");
+		pc.EnterCurrentPwd(p.getProperty("pwd"));
 
-		log.info("enter current new password");
-		pc.EnterNewPwd("abc@123456"); 
+		log.info("enter  new password");
+		pc.EnterNewPwd(p.getProperty("updatepwd")); 
 
-		log.info("enter confrim  password");
-		pc.ConfrimNewPwd("abc@123456");
+		log.info("enter new confrim  password");
+		pc.ConfrimNewPwd(p.getProperty("updatepwd"));
 
 		log.info("click on  save  password button");
 		pc.ClickOnSavePwd(); 
